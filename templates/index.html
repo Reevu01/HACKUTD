@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="{{ url_for('static', filename='css/output.css') }}"
+      rel="stylesheet"
+    />
+    <title>Flask with Tailwind CSS</title>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white p-6">
+      <h1 class="text-4xl font-bold">Welcome to My Flask + Tailwind App</h1>
+    </header>
+
+    <nav class="bg-gray-200 py-4">
+      <ul class="flex justify-center space-x-6">
+        <li>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="p-8">
+      <section class="mb-6">
+        <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
+        <p class="text-lg">
+          This is a basic HTML page using Flask and styled with Tailwind CSS.
+        </p>
+        <button
+          class="bg-blue-500 hover:bg-violet-600 text-white py-2 px-4 rounded"
+        >
+          Bruh
+        </button>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p>&copy; 2024 Your Name</p>
+    </footer>
+  </body>
+</html>
